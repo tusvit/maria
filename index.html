@@ -6,22 +6,30 @@
 
 <style>
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f8f5f7;
-    color: #333;
+    color: white;
     text-align: center;
-    padding: 50px;
+
+    /* ДВА ФОНА ИЗ ПАПКИ */
+    background:
+        linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("avatar1.png") left,
+        url("avatar2.png") right;
+
+    background-size: 50% 100%, 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left top, right top;
 }
 
 h1 {
     font-size: 42px;
-    color: #b76e79;
-    margin-bottom: 10px;
+    color: #f5c6d6;
+    margin-top: 40px;
 }
 
 p {
     font-size: 18px;
-    line-height: 1.6;
 }
 
 .section {
@@ -32,16 +40,10 @@ p {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 25px;
-    background-color: #b76e79;
+    background-color: #d18aa5;
     color: white;
     text-decoration: none;
     border-radius: 25px;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background-color: #a15c66;
 }
 </style>
 
@@ -53,23 +55,11 @@ p {
 
 <p>
 Cześć! Jestem Maria 💕<br>
-Tworzę piękne i eleganckie paznokcie, które podkreślą Twoją kobiecość i styl.<br>
-Każdy manicure wykonuję z dbałością o najmniejszy detal.
+Piękne paznokcie dla Ciebie ✨
 </p>
-
-<div class="section">
-<h2>💖 O mnie</h2>
-<p>
-Witaj! Jestem Maria i zrobię Twoje paznokcie pięknymi ✨<br>
-Specjalizuję się w manicure hybrydowym, klasycznym i artystycznym.
-</p>
-</div>
 
 <div class="section">
 <h2>📍 Lokalizacja</h2>
-<p>
-Studio znajduje się tutaj:
-</p>
 
 <a class="button" 
 href="https://maps.app.goo.gl/MHfcfnUBae1vnuWx6?g_st=ic"
